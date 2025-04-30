@@ -25,9 +25,6 @@ pub struct Pokemon {
 
     #[serde(rename = "speed")]
     pub speed: f64,
-
-    #[serde(rename = "type")]
-    pub pokemon_type: String,
 }
 
 // returns a vector of all base stats as a normalized vector
