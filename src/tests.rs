@@ -17,7 +17,6 @@ mod tests {
                 sp_atk: 65.0,
                 sp_def: 65.0,
                 speed: 45.0,
-                pokemon_type: "Grass".to_string(),
             },
             Pokemon {
                 name: "Charmander".to_string(),
@@ -27,7 +26,6 @@ mod tests {
                 sp_atk: 60.0,
                 sp_def: 50.0,
                 speed: 65.0,
-                pokemon_type: "Fire".to_string(),
             },
         ]
     }
@@ -43,7 +41,6 @@ mod tests {
     fn test_pokemon_fields() {
         let pokemons = dummy_pokemon();
         assert_eq!(pokemons[0].name, "Bulbasaur");
-        assert_eq!(pokemons[1].pokemon_type, "Fire");
     }
 
     #[test]
@@ -66,6 +63,5 @@ Charmander,39,52,43,60,50,65,Fire
 
         assert_eq!(pokemons.len(), 2);
         assert_eq!(pokemons[0].name, "Bulbasaur");
-        assert_eq!(pokemons[1].pokemon_type, "Fire");
     }
 }
